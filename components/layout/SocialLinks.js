@@ -4,7 +4,7 @@ import { Mail } from "lucide-react";
 const EMAIL = "olaoluwagbolahan302@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/olaoluwa-gbolahan-b71455270";
 const TWITTER = "https://x.com/Uniq_favie";
-const GITHUB = "https://github.com/Favour32";
+const GITHUB = "https://github.com/Favor32";
 
 const paths = {
   linkedin:
