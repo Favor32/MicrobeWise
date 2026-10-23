@@ -1,11 +1,17 @@
-import { Inter } from "next/font/google"; // ← change font name here
+import { Fraunces, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-const mainFont = Inter({ // ← and here
+const display = Fraunces({
   subsets: ["latin"],
-  variable: "--font-main",
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const body = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -17,9 +23,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-   <html lang="en" className={mainFont.variable} data-scroll-behavior="smooth">
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable}`}
+      data-scroll-behavior="smooth"
+    >
       <body className="flex min-h-screen flex-col">
-        {/* Lets keyboard users skip straight past the navbar */}
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-crimson focus:px-4 focus:py-2 focus:text-white"

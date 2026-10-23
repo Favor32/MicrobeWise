@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LogoMark } from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const explore = [
   { href: "/microbes", label: "Microbe Library" },
@@ -29,28 +30,7 @@ export default function Footer() {
             diseases, and public health easier to understand, explore, and
             remember.
           </p>
-          <div className="mt-5">
-  <p className="text-sm font-semibold">Connect</p>
-  <ul className="mt-3 flex flex-wrap gap-2">
-    {[
-      { label: "LinkedIn", href: "https://www.linkedin.com/in/your-handle" },
-      { label: "Twitter / X", href: "https://x.com/uniq_favie" },
-      { label: "GitHub", href: "https://github.com/favor32" },
-    ].map((s) => (
-      <li key={s.label}>
-        <a
-          href={s.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-full border border-line bg-white px-4 py-2 text-xs font-semibold transition hover:border-crimson hover:text-crimson"
-        >
-          {s.label}
-        </a>
-      </li>
-    ))}
-  </ul>
-</div>
-        </div>
+          <SocialLinks />
 
         <div>
           <h2 className="text-sm uppercase tracking-widest text-crimson">

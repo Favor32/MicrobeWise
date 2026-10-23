@@ -20,7 +20,7 @@
   --color-muted: var(--muted);
   --color-line: var(--line);
 
-    --font-sans: var(--font-main), ui-sans-serif, system-ui, sans-serif;
+    --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
 }
 
 
@@ -125,4 +125,11 @@ h4 {
 .tile-in {
   opacity: 0;
   animation: tile-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Editorial serif headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
 }
