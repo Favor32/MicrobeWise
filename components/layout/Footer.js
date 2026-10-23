@@ -31,6 +31,7 @@ export default function Footer() {
             remember.
           </p>
           <SocialLinks />
+        </div>
 
         <div>
           <h2 className="text-sm uppercase tracking-widest text-crimson">
@@ -76,9 +77,7 @@ export default function Footer() {
             not medical advice and cannot diagnose, treat, or replace
             consultation with a qualified healthcare professional.
           </p>
-          <p className="mt-2">
-            © 2026 MicrobeWise. All rights reserved.
-          </p>
+          <p className="mt-2">© 2026 MicrobeWise. All rights reserved.</p>
         </div>
       </div>
     </footer>
