@@ -1,4 +1,3 @@
-cat > components/ui/HealthCards.js << 'EOF'
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Reveal from "./Reveal";
@@ -100,4 +99,3 @@ export function HealthCard({ topic, index = 0 }) {
     </Reveal>
   );
 }
-EOF

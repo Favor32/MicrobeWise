@@ -1,4 +1,3 @@
-cat > components/layout/SocialLinks.js << 'EOF'
 import { Mail } from "lucide-react";
 
 // ✏️ EDIT THESE THREE LINES

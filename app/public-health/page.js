@@ -1,4 +1,3 @@
-cat > app/public-health/page.js << 'EOF'
 import { ShieldAlert } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import {
@@ -46,4 +45,3 @@ export default function PublicHealthPage() {
     </div>
   );
 }
-EOF
