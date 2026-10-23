@@ -128,7 +128,7 @@ export default function QuizLab() {
   if (stage === "setup") {
     return (
       <div className="grid gap-8 lg:grid-cols-5">
-        <div className="rounded-3xl bg-blush p-8 lg:col-span-2">
+        <div className="rounded-3xl bg-blush p-5 sm:p-8 lg:col-span-2">
           <p className="text-xs font-bold uppercase tracking-widest text-crimson">
             How it works
           </p>
@@ -149,7 +149,7 @@ export default function QuizLab() {
           </ul>
         </div>
 
-        <div className="rounded-3xl border border-line bg-white p-8 shadow-sm lg:col-span-3">
+        <div className="rounded-3xl border border-line bg-white p-5 shadow-sm sm:p-8 lg:col-span-3">
           <h2 className="text-2xl">Set up your quiz</h2>
           <div className="mt-6 space-y-6">
             <ChoiceGroup label="Topic" options={topics} value={topic} onChange={setTopic} />
@@ -181,7 +181,7 @@ export default function QuizLab() {
   if (stage === "results") {
     const percent = Math.round((score / deck.length) * 100);
     return (
-      <div className="mx-auto max-w-xl rounded-3xl border border-line bg-white p-10 text-center shadow-sm">
+      <div className="mx-auto max-w-xl rounded-3xl border border-line bg-white p-6 text-center shadow-sm sm:p-10">
         <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blush text-crimson">
           <Trophy size={28} aria-hidden="true" />
         </span>
@@ -221,7 +221,7 @@ export default function QuizLab() {
   return (
     <div className="grid gap-6 lg:grid-cols-5">
       {/* LEFT: question, timer, streak */}
-      <div className="flex flex-col rounded-3xl bg-blush p-8 lg:col-span-2">
+      <div className="flex flex-col rounded-3xl bg-blush p-5 sm:p-8 lg:col-span-2">
         <div className="flex items-center justify-between text-sm font-semibold">
           <span>
             Question {index + 1} of {deck.length}
@@ -247,7 +247,7 @@ export default function QuizLab() {
         </p>
         <h2 className="mt-3 text-xl sm:text-2xl">{q.question}</h2>
 
-        <div className="mt-auto flex items-center justify-between pt-8">
+        <div className="mt-auto flex flex-wrap items-center justify-between gap-4 pt-8">
           <div className="flex items-center gap-3">
             <div className="relative h-[72px] w-[72px]" aria-hidden="true">
               <svg viewBox="0 0 72 72" className="h-full w-full -rotate-90">

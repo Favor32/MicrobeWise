@@ -33,7 +33,7 @@ const facts = [
 function FlipCard({ fact }) {
   const [flipped, setFlipped] = useState(false);
   return (
-    <div className="flip h-56">
+    <div className="flip h-64 sm:h-56">
       <button
         onClick={() => setFlipped(!flipped)}
         aria-pressed={flipped}

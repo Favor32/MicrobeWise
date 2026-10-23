@@ -17,7 +17,7 @@ const sources = [
 export default function Footer() {
   return (
     <footer className="border-t border-line bg-blush">
-      <div className="mx-auto grid max-w-screen-2xl gap-10 px-6 py-14 md:grid-cols-4">
+      <div className="mx-auto grid max-w-screen-2xl gap-10 px-4 sm:px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
             <LogoMark size={32} />
@@ -70,7 +70,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-line">
-        <div className="mx-auto max-w-screen-2xl px-6 py-6 text-xs text-muted">
+        <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-6 text-xs text-muted">
           <p>
             <strong className="text-ink">Educational disclaimer:</strong>{" "}
             MicrobeWise provides general educational information only. It is
@@ -81,5 +81,4 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
-}
+  )

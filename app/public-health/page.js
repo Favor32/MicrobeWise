@@ -13,7 +13,7 @@ export default function PublicHealthPage() {
   const rest = healthTopics.filter((t) => t.slug !== featured.slug);
 
   return (
-    <div className="mx-auto max-w-screen-2xl px-6 py-14">
+    <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-14">
       <SectionHeading
         eyebrow="Public health education"
         title="Knowledge That Protects"

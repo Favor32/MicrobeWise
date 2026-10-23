@@ -54,7 +54,7 @@ export default function MicrobeLibrary({ microbes }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by name, e.g. E. coli or malaria"
-          className="w-full rounded-full border border-line bg-white py-3.5 pl-12 pr-12 text-sm shadow-sm outline-none transition focus:border-crimson"
+          className="w-full rounded-full border border-line bg-white py-3.5 pl-12 pr-12 text-base shadow-sm sm:text-sm outline-none transition focus:border-crimson"
         />
         {query && (
           <button

@@ -50,7 +50,7 @@ export default async function MicrobeProfile({ params }) {
     .slice(0, 4);
 
   return (
-    <div className="mx-auto max-w-screen-2xl px-6 py-10">
+    <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-10">
       <Link
         href="/microbes"
         className="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-crimson"

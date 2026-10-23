@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
       <nav
-        className="mx-auto flex max-w-screen-2xl items-center justify-between px-6 py-4"
+        className="mx-auto flex max-w-screen-2xl items-center justify-between px-4 sm:px-6 py-4"
         aria-label="Main navigation"
       >
         <Logo />
@@ -75,7 +75,7 @@ export default function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="border-t border-line bg-white px-6 pb-6 lg:hidden"
+          className="border-t border-line bg-white px-4 sm:px-6 pb-6 lg:hidden"
         >
           <ul className="flex flex-col py-2">
             {links.map((link) => (

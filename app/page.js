@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       {/* ---------- HERO ---------- */}
-      <section className="mx-auto grid max-w-screen-2xl items-center gap-10 px-6 py-14 lg:grid-cols-2 lg:py-20">
+      <section className="mx-auto grid max-w-screen-2xl items-center gap-10 px-4 sm:px-6 py-14 lg:grid-cols-2 lg:py-20">
         <div>
           <p className="inline-flex items-center gap-2 rounded-full bg-blush px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-crimson">
             <FlaskConical size={14} aria-hidden="true" />
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* ---------- MICROBE CATEGORIES ---------- */}
-      <section className="mx-auto max-w-screen-2xl px-6 py-16">
+      <section className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-16">
         <SectionHeading
           eyebrow="Explore the microbes"
           title="Meet the Microbial World"
@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* ---------- INTERACTIVE LEARNING ---------- */}
       <section className="bg-blush">
-        <div className="mx-auto grid max-w-screen-2xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-screen-2xl items-center gap-12 px-4 sm:px-6 py-20 lg:grid-cols-2">
           <div>
             <SectionHeading
               eyebrow="Quiz Lab"
@@ -157,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* ---------- PUBLIC HEALTH ---------- */}
-      <section className="mx-auto max-w-screen-2xl px-6 py-20">
+      <section className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
             eyebrow="Public health education"
@@ -177,7 +177,7 @@ export default function Home() {
 
       {/* ---------- FEATURED DISCOVERY ---------- */}
   {/* ---------- FEATURED DISCOVERY ---------- */}
-<section className="mx-auto max-w-screen-2xl px-6 pb-20">
+<section className="mx-auto max-w-screen-2xl px-4 sm:px-6 pb-20">
   <SectionHeading
     eyebrow="Discovery"
     title="Flip to Discover"

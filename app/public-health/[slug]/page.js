@@ -34,7 +34,7 @@ export default async function ArticlePage({ params }) {
   const others = healthTopics.filter((t) => t.slug !== slug).slice(0, 3);
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-10">
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 py-10">
       <Link
         href="/public-health"
         className="inline-flex items-center gap-2 text-sm font-semibold text-muted hover:text-crimson"

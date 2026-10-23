@@ -6,7 +6,7 @@ export const metadata = { title: "Learn | MicrobeWise" };
 
 export default function LearnPage() {
   return (
-    <div className="mx-auto max-w-screen-2xl px-6 py-14">
+    <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-14">
       <SectionHeading
         eyebrow="Learn"
         title="Microbiology in Everyday Life"

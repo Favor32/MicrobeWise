@@ -5,7 +5,7 @@ export const metadata = { title: "Quiz Lab | MicrobeWise" };
 
 export default function QuizPage() {
   return (
-    <div className="mx-auto max-w-screen-2xl px-6 py-14">
+    <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 py-14">
       <SectionHeading
         eyebrow="Quiz Lab"
         title="Test Your Microbiology Knowledge"
