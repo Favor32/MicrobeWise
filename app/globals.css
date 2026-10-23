@@ -1,26 +1,128 @@
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --crimson: #c91832;
+  --crimson-dark: #a8122a; /* for hover states */
+  --white: #ffffff;
+  --blush: #fff1f2;
+  --ink: #24232b; /* charcoal text */
+  --muted: #6b7280;
+  --line: #f0e5e7; /* light borders */
 }
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-crimson: var(--crimson);
+  --color-crimson-dark: var(--crimson-dark);
+  --color-blush: var(--blush);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+
+    --font-sans: var(--font-main), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* Visible keyboard focus (important for accessibility) */
+:focus-visible {
+  outline: 3px solid var(--crimson);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* Gentle floating motion for the hero illustration */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.float-slow {
+  animation: float 7s ease-in-out infinite;
+}
+.float-delay {
+  animation-delay: -3s;
+}
+.card-classy {
+  position: relative;
+  overflow: hidden;
+}
+.card-classy::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--crimson);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-classy:hover::before {
+  transform: scaleX(1);
+}
+.card-classy .card-icon {
+  transition: background 0.3s, color 0.3s;
+}
+.card-classy:hover .card-icon {
+  background: var(--crimson);
+  color: #fff;
+}
+.flip { perspective: 1000px; }
+.flip-inner {
+  position: relative;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transform-style: preserve-3d;
+}
+.flip-inner[data-flipped="true"] { transform: rotateY(180deg); }
+.flip-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-back { transform: rotateY(180deg); }
+/* Quiz answer tiles slide in one after another */
+@keyframes tile-in {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.tile-in {
+  opacity: 0;
+  animation: tile-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
