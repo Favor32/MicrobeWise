@@ -2,7 +2,7 @@ import { Mail } from "lucide-react";
 
 // ✏️ EDIT THESE THREE LINES
 const EMAIL = "olaoluwagbolahan302@gmail.com";
-const LINKEDIN = "https://www.linkedin.com/in/Olaoluwa Gbolahan";
+const LINKEDIN = "https://www.linkedin.com/in/olaoluwa-gbolahan-b71455270";
 const TWITTER = "https://x.com/Uniq_favie";
 const GITHUB = "https://github.com/Favour32";
 
